@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="bai3.js"></script>
+</head>
+<body>
+    <script>
+         for(var i=0;i<hoTen.length;i++)
+       {
+        if(hoTen[i]==" ")
+        {
+         // tách họ tên vừa nhập
+            ho = hoTen.slice(0,i);
+            hoTen = hoTen.slice(i).trim();
+            break;
+        }
+       }
+    // kiểm tra có tồn tại họ tên không
+        var check = false;
+        for(var i=hoTen.length-1;i>=0;i--)
+       {
+        if(hoTen[i]==" ")
+        {
+            check = true;  
+           // tách tên   
+            ten = hoTen.slice(i).trim();
+            // tách tên lót ra khỏi họ và tên
+            tenLot = hoTen.slice(0,i);
+            break;
+        }
+       }
+       // không tên lót
+       if(check==false)
+       {
+        ten = hoTen;
+        alert("Họ: "+ho);
+        alert("Tên: "+ten);
+        alert("Họ và Tên: "+ho+" "+ten);
+       }
+      //TH: có tên lót
+       else
+       {
+        alert("Họ: "+ho);
+        alert("Tên lót: "+tenLot);
+        alert("Tên: "+ten);
+        // nếu là nam có tên lót thì đổi thành "Văn"
+        if(gioiTinh.toLowerCase()=="nam")
+        {
+            tenLot = "Văn";
+        }
+        // nếu là nữ có tên lót thì đổi thanh "Vẽ"
+        else if(gioiTinh.toLowerCase()=="nữ")
+        {
+            tenLot = "Vẽ";    
+        }
+        alert("Họ và tên sau khi đổi: "+ho+" "+tenLot+" "+ten);
+       }
+    </script>
+</body>
+</html>
