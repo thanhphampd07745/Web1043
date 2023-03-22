@@ -27,16 +27,16 @@ do {
                 break;
             case 2:
                 //----------tính điểm TB bằng if_else---------//
-                if(diemTB<=10){
+                if(diemTB>=8 ||diemTB <=10){
                     console.log("Giỏi");
                 }
-                else if(diemTB<8){
+                else if(diemTB<8 || diemTB <=7){
                     console.log("Khá");
                 }
-                else if(diemTB<7){
+                else if(diemTB<7 || diemTB<=5){
                     console.log("Trung bình");
                 }
-                else if(diemTB<5){
+                else{
                     console.log("Yếu");
                 }
                 break;
@@ -60,7 +60,6 @@ do {
                 console.log("Học lực: Trung Bình");
                 break;
             case 7:
-            case 8:
                 console.log("Học lực: Khá");
                 break;
             default:

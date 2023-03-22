@@ -3,6 +3,3 @@ function MT(ketqua){
     ketqua.value+=this.value;
 }
 // hàm tính tổng
-function tinhTong(){
-    document.write();
-}
