@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <form> <!-- tạo form -->
     <input type="text" id="ketqua">
     <br> <!-- 1 hàng có 4 cột -->
         <td><input type="button" value="7" onclick="ketqua.value+=this.value"></td>
@@ -29,13 +28,8 @@
         <td><input type="button" value="*" onclick="ketqua.value+=this.value"></td>
     <br>
         <td><input type="button" value="0" onclick="ketqua.value+=this.value"></td>
-        <td><input type="button" value="C" onclick="ketqua.value=''"></td>
+        <td><input type="reset" value="C" onclick="ketqua.value=''"></td>
         <td><input type="button" value="=" onclick="ketqua.value=eval(ketqua.value)"></td>
         <td><input type="button" value="/" onclick="ketqua.value+=this.value"></td>
-        <div id="xoa">
-            <!-- tạo nút delete -->
-        <button type="reset">Xóa</button>
-        </div>
-        </form>
 </body>
 </html>
