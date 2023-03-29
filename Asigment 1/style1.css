@@ -1,0 +1,128 @@
+.container{
+    background-color: rgb(246, 243, 243);
+}
+.top-right {
+    text-align: right;
+    margin-bottom: 20px;
+    background-color: aqua;
+  }
+  
+  .top-right a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    background-color: aqua;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: aqua;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .slidebar {
+    width: 300px;
+  }
+  
+  .tkiem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .tkiem input[type="search"] {
+    width: 70%;
+  }
+  
+  .tkiem button {
+    width: 25%;
+  }
+  
+  .article {
+    margin-bottom: 20px;
+  }
+  
+  .tintuc h4 {
+    background-color: lightblue;
+    padding: 10px;
+  }
+  
+  .bang img {
+    display: block;
+    margin: auto;
+  }
+  
+  .aside table {
+    width: 100%;
+  }
+  
+  .aside th {
+    background-color: lightblue;
+  }
+  .banghai {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .banghai h4 {
+    background-color: lightblue;
+    padding: 10px;
+  }
+  
+  .banghai img {
+    display: block;
+    margin: auto;
+  }
+  
+  .thongtin h4 {
+    background-color: lightblue;
+    padding: 10px;
+  }
+  
+  .khuon {
+    text-align: center;
+  }
+  .footer {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer td {
+    display: block;
+  }
